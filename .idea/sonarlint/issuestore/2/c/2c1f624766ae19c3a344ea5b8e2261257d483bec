@@ -1,0 +1,9 @@
+
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(ÆÀûı8Ìô »Ş/
+<
+java:S1168I"&Return an empty array instead of null.(¥¹ï
+m
+java:S6204Q"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ªçŸŠøÿÿÿÿ
+V	java:S125Z"<This block of commented-out lines of code should be removed.(åÕÒÒúÿÿÿÿ
+`
+java:S2259B"KA "NullPointerException" could be thrown; "riskPositions" is nullable here.(•¹ÿ

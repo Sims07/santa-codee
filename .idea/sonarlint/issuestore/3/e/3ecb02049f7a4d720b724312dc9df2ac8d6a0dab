@@ -1,0 +1,25 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(½¶êª
+R
+java:S1117P"7Rename "res" which hides the field declared at line 15.(ÅÉÏþþÿÿÿÿ
+q
+java:S2234R"VParameters to diff have the same names but not the same order as the method arguments.(¸ûœÔøÿÿÿÿ
+;
+java:S1659X" Declare "h2" on a separate line.(¯ü¶´þÿÿÿÿ
+;
+java:S1659d" Declare "h2" on a separate line.(¯ü¶´þÿÿÿÿ
+C
+java:S1659‚" Declare "h2" on a separate line.(¯ü¶´þÿÿÿÿ8è£ñÔÙ/
+t
+java:S2293X"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯ü¶´þÿÿÿÿ
+t
+java:S2293X"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯ü¶´þÿÿÿÿ
+t
+java:S2293d"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯ü¶´þÿÿÿÿ
+t
+java:S2293d"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯ü¶´þÿÿÿÿ
+|
+java:S2293‚"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯ü¶´þÿÿÿÿ8ì£ñÔÙ/
+|
+java:S2293‚"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯ü¶´þÿÿÿÿ8ì£ñÔÙ/

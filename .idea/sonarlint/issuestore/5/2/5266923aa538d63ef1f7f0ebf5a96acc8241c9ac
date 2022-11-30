@@ -1,0 +1,6 @@
+
+o
+java:S1450"ZRemove the "timeElapsed" field and declare it as a local variable in the relevant methods.(ÚÉöF
+m
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(à™ŠÚýÿÿÿÿ
+M	java:S106("9Replace this use of System.out or System.err by a logger.(‹«ÚZ
