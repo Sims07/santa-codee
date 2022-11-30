@@ -12,13 +12,13 @@ import org.junit.jupiter.api.Test;
 class DecoderTest {
   @Test
   void givenMatrix2x2() {
-    RiskMatrix matrix = new RiskMatrix(2, 2).load(0, "13").load(1, "21");
+    com.santa.puzlle.day15.RiskMatrix matrix = new com.santa.puzlle.day15.RiskMatrix(2, 2).load(0, "13").load(1, "21");
     BDDAssertions.then(matrix.shortenRisk()).isEqualTo(3);
   }
 
   @Test
   void givenMatrixGraph2x2() {
-    RiskMatrixGraph matrix = new RiskMatrixGraph(2, 2).load(0, "13").load(1, "21").init();
+    com.santa.puzlle.day15.RiskMatrixGraph matrix = new com.santa.puzlle.day15.RiskMatrixGraph(2, 2).load(0, "13").load(1, "21").init();
     BDDAssertions.then(matrix.shortenRisk()).isEqualTo(3);
   }
 
@@ -29,7 +29,7 @@ class DecoderTest {
             Paths.get(
                 "/Users/sc/Documents/projets/pocs/santa-code/src/test/resources/day15/day15part1.txt"))) {
       final List<String> input = lines.collect(Collectors.toList());
-      final RiskMatrixGraph riskMatrix = new RiskMatrixGraph(input.get(0).length(), input.size());
+      final com.santa.puzlle.day15.RiskMatrixGraph riskMatrix = new com.santa.puzlle.day15.RiskMatrixGraph(input.get(0).length(), input.size());
       int x = 0;
       for (String line : input) {
         riskMatrix.load(x, line);
@@ -47,7 +47,7 @@ class DecoderTest {
             Paths.get(
                 "/Users/sc/Documents/projets/pocs/santa-code/src/test/resources/day15/day15part1.txt"))) {
       final List<String> input = lines.collect(Collectors.toList());
-      final RiskMatrix riskMatrix = new RiskMatrix(input.get(0).length(), input.size());
+      final com.santa.puzlle.day15.RiskMatrix riskMatrix = new com.santa.puzlle.day15.RiskMatrix(input.get(0).length(), input.size());
       int x = 0;
       for (String line : input) {
         riskMatrix.load(x, line);
@@ -64,7 +64,7 @@ class DecoderTest {
             Paths.get(
                 "/Users/sc/Documents/projets/pocs/santa-code/src/test/resources/day15/day15part1Real.txt"))) {
       final List<String> input = lines.collect(Collectors.toList());
-      final RiskMatrixGraph riskMatrix = new RiskMatrixGraph(input.get(0).length(), input.size());
+      final com.santa.puzlle.day15.RiskMatrixGraph riskMatrix = new com.santa.puzlle.day15.RiskMatrixGraph(input.get(0).length(), input.size());
       int x = 0;
       for (String line : input) {
         riskMatrix.load(x, line);
@@ -82,8 +82,8 @@ class DecoderTest {
             Paths.get(
                 "/Users/sc/Documents/projets/pocs/santa-code/src/test/resources/day15/day15part1Real.txt"))) {
       final List<String> input = lines.collect(Collectors.toList());
-      final RiskMatrixGraphPart2 riskMatrix =
-          new RiskMatrixGraphPart2(input.get(0).length(), input.size());
+      final com.santa.puzlle.day15.RiskMatrixGraphPart2 riskMatrix =
+          new com.santa.puzlle.day15.RiskMatrixGraphPart2(input.get(0).length(), input.size());
       BDDAssertions.then(riskMatrix.nextRiskLevel(8, 1)).isEqualTo(9);
       BDDAssertions.then(riskMatrix.nextRiskLevel(9, 1)).isEqualTo(1);
       int x = 0;
