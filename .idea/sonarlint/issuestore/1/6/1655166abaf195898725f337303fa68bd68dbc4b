@@ -1,5 +1,0 @@
-
-k
-java:S1450"URemove the "digits" field and declare it as a local variable in the relevant methods.(§œ√Ü
-@
-java:S1068"*Remove this unused "digits" private field.(§œ√Ü
