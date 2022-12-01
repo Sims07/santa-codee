@@ -5,15 +5,17 @@ import java.util.List;
 
 public record Elves(List<Elf> elves) {
 
-  public Elf elfWithMaxCalory() {
+  public Elf elfWithMaxCalorie() {
     return elves.stream().max(Comparator.comparing(Elf::totalCalories)).orElseThrow();
   }
 
   public Long topThreeTotalCalories() {
-    List<Elf> sortedElves =
-        elves.stream().sorted(Comparator.comparing(Elf::totalCalories).reversed()).toList();
-    return sortedElves.get(0).totalCalories()
-        + sortedElves.get(1).totalCalories()
-        + sortedElves.get(2).totalCalories();
+    return elves.stream()
+        .sorted(Comparator.comparing(Elf::totalCalories).reversed())
+        .toList()
+        .subList(0, 3)
+        .stream()
+        .mapToLong(Elf::totalCalories)
+        .sum();
   }
 }

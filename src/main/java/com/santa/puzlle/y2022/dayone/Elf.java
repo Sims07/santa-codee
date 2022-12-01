@@ -5,10 +5,10 @@ import java.util.List;
 
 public record Elf(List<Integer> calories) {
 
-  public List<Integer> addCalory(Integer calory) {
+  public Elf addCalorie(Integer calorie) {
     final ArrayList<Integer> newCalories = new ArrayList<>(calories);
-    newCalories.add(calory);
-    return newCalories;
+    newCalories.add(calorie);
+    return new Elf(newCalories);
   }
 
   public Long totalCalories() {
